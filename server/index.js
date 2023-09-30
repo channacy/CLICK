@@ -11,7 +11,6 @@ import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import {register} from "./controllers/auth.js";
 
-
 /* CONFIGURATION */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
