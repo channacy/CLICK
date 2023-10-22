@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema(
             required: true,
             min: 2, 
             max: 50,
-            unique: true
+            unique: true,
         },
         password:{
             type:String,
@@ -34,7 +34,7 @@ const UserSchema = new mongoose.Schema(
             default: []
         },
         location: String,
-        occupration: String,
+        occupation: String,
         viewedProfile: Number,
         impressions: Number,
     },

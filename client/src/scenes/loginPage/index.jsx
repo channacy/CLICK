@@ -21,6 +21,6 @@ const LoginPage = () =>{
                 <Form />
             </Box>
        </Box>
-    )
-}
+    );
+};
 export default LoginPage;
