@@ -20,12 +20,16 @@ const Friend = ({friendId, name, subtitle, userPicturePath}) =>{
     const meduim = palette.neutral.meduim;
 
     const isFriend = friends.find((friend) => friend._id === friendId);
+    
     const patchFriend = async() =>{
         const response = await fetch(
             `http://localhost:3001/users/${_id}/${friendId}`,
             {
                 method: "PATCH",
-
+                headers:{
+                    Authorization: `Bearer ${token}`,
+                    "Content-Type":"application/json",
+                },
             }
         );
         const data = await response.json();
@@ -38,7 +42,7 @@ const Friend = ({friendId, name, subtitle, userPicturePath}) =>{
                 <UserImage image={userPicturePath} size="55px" />
                 <Box
                     onClick={() =>{
-                        navigate(`profile/${friendId}`);
+                        navigate(`/profile/${friendId}`);
                         navigate(0);
                     }}
                 >

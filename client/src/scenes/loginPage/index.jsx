@@ -11,7 +11,7 @@ const LoginPage = () =>{
                 fontSize="32px"
                 color="primary"
                 >
-                    Sociopedia 
+                    CLICK 
                 </Typography>
             </Box>
             <Box width={isNonMobileScreens? "50%" : "93%"} p="2rem" m="2rem auto" borderradius="1.5em" backgroundColor={theme.palette.background.alt}>
